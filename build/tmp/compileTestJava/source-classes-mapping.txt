@@ -1,0 +1,2 @@
+com/omar/springapp/SpringAppApplicationTests.java
+ com.omar.springapp.SpringAppApplicationTests

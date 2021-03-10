@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-app
+spec:
+  selector:
+    matchLabels:
+      app: spring-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: spring-app
+    spec:
+      containers:
+      - name: spring-app
+        image: us.gcr.io/omar-gke-example/spring-app
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080
